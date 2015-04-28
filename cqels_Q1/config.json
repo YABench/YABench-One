@@ -1,0 +1,40 @@
+{
+    "generator": "SG1",
+    "seed": "1430221964",
+    "vars": {
+        "TEMP": "50.0",
+        "WPOLICY": "oncontentchange"
+    },
+    "tests": [
+        {
+            "name": "small",
+            "duration": "30s",
+            "vars": {
+                "WSIZE": "5s",
+                "WSLIDE": "5s"
+            },
+            "stations": "5",
+            "interval": "10s"
+        },
+        {
+            "name": "middle",
+            "duration": "30s",
+            "vars": {
+                "WSIZE": "5s",
+                "WSLIDE": "5s"
+            },
+            "stations": "15",
+            "interval": "10s"
+        },
+        {
+            "name": "big",
+            "duration": "30s",
+            "vars": {
+                "WSIZE": "5s",
+                "WSLIDE": "5s"
+            },
+            "stations": "1000",
+            "interval": "1s"
+        }
+    ]
+}
