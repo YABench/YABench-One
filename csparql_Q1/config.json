@@ -1,0 +1,40 @@
+{
+  "generator": "SG1",
+  "seed": "1430236906",
+  "vars": {
+    "TEMP": "10.0",
+    "WPOLICY": "onwindowclose"
+  },
+  "tests": [
+    {
+        "name": "small",
+        "duration": "30s",
+        "vars": {
+            "WSIZE": "5s",
+            "WSLIDE": "5s"
+        },
+        "stations": "5",
+        "interval": "10s"
+    },
+    {
+        "name": "middle",
+        "duration": "30s",
+        "vars": {
+            "WSIZE": "5s",
+            "WSLIDE": "5s"
+        },
+        "stations": "15",
+        "interval": "10s"
+    },
+    {
+        "name": "big",
+        "duration": "10s",
+        "vars": {
+            "WSIZE": "5s",
+            "WSLIDE": "5s"
+        },
+        "stations": "3",
+        "interval": "1s"
+    }
+  ]
+}
