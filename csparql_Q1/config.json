@@ -5,6 +5,7 @@
     "TEMP": "10.0",
     "WPOLICY": "onwindowclose"
   },
+  "graceful": "false",
   "tests": [
     {
         "name": "small",
@@ -13,8 +14,8 @@
             "WSIZE": "5s",
             "WSLIDE": "5s"
         },
-        "stations": "5",
-        "interval": "10s"
+        "stations": "50",
+        "interval": "1s"
     },
     {
         "name": "middle",
@@ -23,17 +24,17 @@
             "WSIZE": "5s",
             "WSLIDE": "5s"
         },
-        "stations": "15",
-        "interval": "10s"
+        "stations": "200",
+        "interval": "1s"
     },
     {
         "name": "big",
-        "duration": "10s",
+        "duration": "30s",
         "vars": {
             "WSIZE": "5s",
             "WSLIDE": "5s"
         },
-        "stations": "3",
+        "stations": "500",
         "interval": "1s"
     }
   ]
