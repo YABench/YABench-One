@@ -1,0 +1,24 @@
+{
+    "generator": "SG1",
+    "seed": "1430237317",
+    "vars": {
+        "TEMP": "50.0",
+        "WSIZE": "5s",
+        "WSLIDE": "5s",
+        "VARIATION_THRESHOLD": "0.0",
+        "WPOLICY": "onwindowclose"
+    },
+    "stations": "5",
+    "duration": "20s",
+    "interval": "1s",
+    "tests": [
+        {
+            "name": "gracious",
+            "graceful": "true"
+        },
+        {
+            "name": "non-gracious",
+            "graceful": "false"
+        }
+    ]
+}
