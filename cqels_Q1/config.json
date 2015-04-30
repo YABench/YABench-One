@@ -3,38 +3,24 @@
     "seed": "1430221964",
     "vars": {
         "TEMP": "50.0",
+        "WSIZE": "5s",
+        "WSLIDE": "5s",
         "WPOLICY": "oncontentchange"
     },
+    "interval": "1s",
+    "duration": "30s",
     "tests": [
         {
             "name": "small",
-            "duration": "30s",
-            "vars": {
-                "WSIZE": "5s",
-                "WSLIDE": "5s"
-            },
-            "stations": "50",
-            "interval": "1s"
+            "stations": "50"
         },
         {
             "name": "middle",
-            "duration": "30s",
-            "vars": {
-                "WSIZE": "5s",
-                "WSLIDE": "5s"
-            },
-            "stations": "200",
-            "interval": "1s"
+            "stations": "200"
         },
         {
             "name": "big",
-            "duration": "30s",
-            "vars": {
-                "WSIZE": "5s",
-                "WSLIDE": "5s"
-            },
-            "stations": "500",
-            "interval": "1s"
+            "stations": "500"
         }
     ]
 }
