@@ -9,6 +9,7 @@
     },
     "interval": "1s",
     "duration": "30s",
+    "graceful": "false",
     "tests": [
         {
             "name": "small",
@@ -16,11 +17,11 @@
         },
         {
             "name": "middle",
-            "stations": "200"
+            "stations": "150"
         },
         {
             "name": "big",
-            "stations": "500"
+            "stations": "300"
         }
     ]
 }

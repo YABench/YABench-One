@@ -1,0 +1,27 @@
+{
+    "generator": "SG1",
+    "seed": "1430237208",
+    "vars": {
+        "TEMP": "50.0",
+        "WSIZE": "5s",
+        "WSLIDE": "5s",
+        "WPOLICY": "onwindowclose"
+    },
+    "interval": "1s",
+    "duration": "30s",
+    "graceful": "false",
+    "tests": [
+        {
+            "name": "small",
+            "stations": "50"
+        },
+        {
+            "name": "middle",
+            "stations": "1000"
+        },
+        {
+            "name": "big",
+            "stations": "10000"
+        }
+    ]
+}
