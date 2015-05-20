@@ -11,6 +11,7 @@
     "interval": "1s",
     "duration": "30s",
     "graceful": "false",
+    "singleresult": "false",
     "tests": [
         {
             "name": "small",

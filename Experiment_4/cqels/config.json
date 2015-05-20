@@ -18,7 +18,8 @@
         },
         {
             "name": "non-gracious",
-            "graceful": "false"
+            "graceful": "false",
+            "singleresult": "false"
         }
     ]
 }
