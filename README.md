@@ -1,12 +1,12 @@
 # YABench-One
 
-A benchmark testing SELECT query capabilities of C-SPARQL and CQELS engine.
+A benchmark testing SELECT, aggregate, and join query capabilities of C-SPARQL and CQELS engines.
 
 ## Preparing
 
-First, you need to clone this repository, download the [latest release](https://github.com/YABench/yabench/releases/latest) of the YABench framework.
+First, you need to clone this repository and download the [latest release](https://github.com/YABench/yabench/releases/latest) of the YABench framework.
 
-Make sure that you have installed all prerequisites and dependencies which are listed in the [Installing](https://github.com/YABench/yabench/wiki#installing) wiki page.
+Make sure that you have installed all prerequisites and dependencies which are listed on the [Installing](https://github.com/YABench/yabench/wiki#installing) wiki page.
 
 Now you're ready to run the tests!
 
@@ -34,4 +34,4 @@ If you want to run Experiment #1 with CQELS engine, you need to execute the foll
 -Dexec.engine=yabench-<version>/yabench-generator.jar
 ```
 
-The results can be found in `Experiment_1/cqels/results` folder. They can be visualized with `yabench-reports` web application, read [Visualisation of the results](https://github.com/YABench/yabench/wiki#visualisation-the-results) wiki page.
+The results can be found in the `Experiment_1/cqels/results` folder. They can be visualized with the `yabench-reports` web application, see [Visualisation of the results](https://github.com/YABench/yabench/wiki#visualisation-the-results) wiki page.
