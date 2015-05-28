@@ -1,41 +1,28 @@
 {
     "generator": "SG1",
-    "seed": "1430237317",
+    "seed": "1430236808",
     "vars": {
         "TEMP": "50.0",
-        "VARIATION_THRESHOLD": "0.0",
-        "WPOLICY": "onwindowclose"
+        "WSIZE": "5s",
+        "WSLIDE": "5s",
+        "WPOLICY": "onwindowclose",
+        "VARIATION_THRESHOLD": "0.0"
     },
+    "interval": "1s",
+    "duration": "30s",
+    "graceful": "false",
     "tests": [
         {
             "name": "small",
-            "duration": "30s",
-            "vars": {
-                "WSIZE": "5s",
-                "WSLIDE": "5s"
-            },
-            "stations": "5",
-            "interval": "10s"
+            "stations": "50"
         },
         {
-            "name": "middle",
-            "duration": "30s",
-            "vars": {
-                "WSIZE": "5s",
-                "WSLIDE": "5s"
-            },
-            "stations": "15",
-            "interval": "10s"
+            "name": "medium",
+            "stations": "1000"
         },
         {
             "name": "big",
-            "duration": "10s",
-            "vars": {
-                "WSIZE": "5s",
-                "WSLIDE": "5s"
-            },
-            "stations": "3",
-            "interval": "1s"
+            "stations": "2500"
         }
     ]
 }

@@ -1,22 +1,22 @@
 {
     "generator": "SG1",
-    "seed": "1430221964",
+    "seed": "1430236906",
     "vars": {
         "TEMP": "50.0",
         "WSIZE": "5s",
         "WSLIDE": "5s",
         "WPOLICY": "oncontentchange"
     },
+    "graceful": "false",
     "interval": "1s",
     "duration": "30s",
-    "graceful": "false",
     "tests": [
         {
             "name": "small",
             "stations": "50"
         },
         {
-            "name": "middle",
+            "name": "medium",
             "stations": "150"
         },
         {
