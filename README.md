@@ -1,10 +1,12 @@
 # YABench-One
 
-A benchmark testing SELECT, aggregate, and join query capabilities of C-SPARQL and CQELS engines.
+A benchmark testing SELECT, FILTER, aggregate, and join query capabilities of C-SPARQL and CQELS engines.
 
-## Descriptions
+## Experiments
 
 We described and explained each experiment in a separate document where you find settings, results and discussion sections: [Experiment 1](https://github.com/YABench/yabench-one/tree/master/Experiment_1/README.md), [Experiment 2](https://github.com/YABench/yabench-one/tree/master/Experiment_2/README.md), [Experiment 3](https://github.com/YABench/yabench-one/tree/master/Experiment_3/README.md), [Experiment 4](https://github.com/YABench/yabench-one/tree/master/Experiment_4/README.md).
+
+All the experiments in this benchmark were run with [YABench 1.1.0](https://github.com/YABench/yabench/releases/tag/v1.1.0) on Fedora 20.1 (64 bit), Intel Core i7-3667U CPU @ 2.00Ghz x 4, 8Gb RAM, 180 Gb SSD.
 
 ## Preparing
 
