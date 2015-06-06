@@ -26,6 +26,39 @@ The SMALL test is the same for both engine that allows us to compare their resul
 
 The results are published online: [C-SPARQL](https://github.com/YABench/yabench-one/tree/master/Experiment_1/csparql/results) and [CQELS](https://github.com/YABench/yabench-one/tree/master/Experiment_1/cqels/results). Take a look at [Visualisation of the results](https://github.com/YABench/yabench/wiki#visualisation-the-results) wiki page to find how to visualise the results.
 
+### C-SPARQL
+<div style="text-align: center">
+    <div style="display: inline-block; width: 45%; float: left">
+        <img src="http://yabench.github.io/yabench-one/Experiment_1/csparql/ORACLE_small_pr.png"/>
+        <p>Fig 1. SMALL</p>
+    </div>
+    <div style="display: inline-block; width: 45%; float: right;">
+        <img src="http://yabench.github.io/yabench-one/Experiment_1/csparql/ORACLE_medium_pr.png"/>
+        <p>Fig 2. MEDIUM</p>
+    </div>
+    <div>
+        <img align="center" style="width: 50%" src="http://yabench.github.io/yabench-one/Experiment_1/csparql/ORACLE_big_pr.png"/>
+        <p>Fig 3. BIG</p>
+    </div>
+</div>
+
+### CQELS
+
+<div style="text-align: center">
+    <div style="display: inline-block; width: 45%; float: left">
+        <img src="http://yabench.github.io/yabench-one/Experiment_1/cqels/ORACLE_small_pr.png"/>
+        <p>Fig 3. SMALL</p>
+    </div>
+    <div style="display: inline-block; width: 45%; float: right;">
+        <img src="http://yabench.github.io/yabench-one/Experiment_1/cqels/ORACLE_medium_pr.png"/>
+        <p>Fig 4. MEDIUM</p>
+    </div>
+    <div>
+        <img align="center" style="width: 50%" src="http://yabench.github.io/yabench-one/Experiment_1/cqels/ORACLE_big_pr.png"/>
+        <p>Fig 5. BIG</p>
+    </div>
+</div>
+
 ## Discussion
 
 ### C-SPARQL
@@ -37,10 +70,10 @@ Delay for low load ranges from a minimum of 41ms to a maximum of 112ms. The maxi
 <p align="center">
   <img src="http://yabench.github.io/yabench-one/Experiment_1/winshift.png"/>
   </br>
-  <span>Fig 1. Lower precision and recall due to delay of actual window</span>
+  <span>Fig 6. Lower precision and recall due to delay of actual window</span>
 </p>
 
-This delay, consecutively, allows to draw the conclusion that the actual windows are shifted, therefore, deviating from the ideal windows computed by the oracle as shown in figure above. Given a query which asks for all statements occurring on stream &#x1D54A;, a delay between start and end timestamps of the expected window computed by the oracle &#x1D54E;<sub>e</sub> and the actual window &#x1D54E;<sub>a</sub> by the engine, can be observed. This is also the reason for lower precision and recall values. &#x1D54E;<sub>e</sub> contains only one (*s<sub>2</sub>*) of three relevant statements (blue filling), hence, recall *r* = 1/3. Out of the two selected statements of &#x1D54E;<sub>e</sub> ({*s<sub>1</sub>*, *s<sub>2</sub>*}) only the latter one is relevant, hence, precision *p* = 1/2. In other words, whereas the scope of an ideal window is [*t<sub>s</sub>*, *t<sub>e</sub>*), the scope of shifted windows adds a delay to the start and end timestamps and is denoted as [*t<sub>s</sub>* + *d<sub>s</sub>*, *t<sub>e</sub>* + *d<sub>e</sub>*). It is worth to note that *d<sub>s</sub>* and *d<sub>e</sub>* can be different due to timing issues of engines. This explains different declines in precision and recall.
+This delay, consecutively, allows to draw the conclusion that the actual windows are shifted, therefore, deviating from the ideal windows computed by the oracle as shown in Figure 6. Given a query which asks for all statements occurring on stream &#x1D54A;, a delay between start and end timestamps of the expected window computed by the oracle &#x1D54E;<sub>e</sub> and the actual window &#x1D54E;<sub>a</sub> by the engine, can be observed. This is also the reason for lower precision and recall values. &#x1D54E;<sub>e</sub> contains only one (*s<sub>2</sub>*) of three relevant statements (blue filling), hence, recall *r* = 1/3. Out of the two selected statements of &#x1D54E;<sub>e</sub> ({*s<sub>1</sub>*, *s<sub>2</sub>*}) only the latter one is relevant, hence, precision *p* = 1/2. In other words, whereas the scope of an ideal window is [*t<sub>s</sub>*, *t<sub>e</sub>*), the scope of shifted windows adds a delay to the start and end timestamps and is denoted as [*t<sub>s</sub>* + *d<sub>s</sub>*, *t<sub>e</sub>* + *d<sub>e</sub>*). It is worth to note that *d<sub>s</sub>* and *d<sub>e</sub>* can be different due to timing issues of engines. This explains different declines in precision and recall.
 
 Moreover, we can also see variations between actual and expected result size in triples, the first coming from the engine, the latter being calculated by the oracle.
 
