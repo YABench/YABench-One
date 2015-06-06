@@ -2,6 +2,10 @@
 
 A benchmark testing SELECT, aggregate, and join query capabilities of C-SPARQL and CQELS engines.
 
+## Descriptions
+
+We described and explained each experiment in a separate document where you find settings, results and discussion sections: [Experiment 1](https://github.com/YABench/yabench-one/tree/master/Experiment_1/README.md), [Experiment 2](https://github.com/YABench/yabench-one/tree/master/Experiment_2/README.md), [Experiment 3](https://github.com/YABench/yabench-one/tree/master/Experiment_3/README.md), [Experiment 4](https://github.com/YABench/yabench-one/tree/master/Experiment_4/README.md).
+
 ## Preparing
 
 First, you need to clone this repository and download the [latest release](https://github.com/YABench/yabench/releases/latest) of the YABench framework.
