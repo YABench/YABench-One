@@ -20,8 +20,26 @@ SMALL | 50 | 50
 MEDIUM | 1000 | 150
 BIG | 2500 | 300
 
+The SMALL test is the same for both engine that allows us to compare their results. By at the rest of tests we evaluate the scalability of the engines, so we set the maximum number of stations which the oracle can compute the correctness with. [In case of CQELS the oracle requires a lot more time to check the correctness](TODO) therefore the number is significantly lower.
+
 ## Results
 
 The results are published online: [C-SPARQL](https://github.com/YABench/yabench-one/tree/master/Experiment_3/csparql/results) and [CQELS](https://github.com/YABench/yabench-one/tree/master/Experiment_3/cqels/results). Take a look at [Visualisation of the results](https://github.com/YABench/yabench/wiki#visualisation-the-results) wiki page to find how to visualise the results.
+
+### C-SPARQL
+
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_3/csparql/ORACLE_pr.png"/>
+    </br>
+    Fig 1. The results of the experiment for C-SPARQL. Precision and recall per window
+</p>
+
+### CQELS
+
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_3/cqels/ORACLE_pr.png"/>
+    </br>
+    Fig 2. The results of the experiment for CQELS. Precision and recall per window
+</p>
 
 ## Discussion
