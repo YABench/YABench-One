@@ -43,3 +43,15 @@ The results are published online: [C-SPARQL](https://github.com/YABench/yabench-
 </p>
 
 ## Discussion
+
+### C-SPARQL
+
+As it's shown on the charts, the precision and recall values decrease under high load. Under low load precision and recall values are higher than 75%, but the other charts the last windows are already have 0% precision and recall. This situation is explained in the same way it was explained in Experiment 1: the reason is the delay of the actual window.
+
+Performance results are close to the results of Experiment 1. The memory consumption constantly grows up to the similar levels.
+
+### CQELS
+
+In this experiment it's also observed how the issue with purging the content of the previous window affects precision and recall values. Precision and recall values of all windows, except the first one, are near 50%, because roughly half of the results go from the content of the previous window and the other half from the content of the current window.
+
+Performance results are close to the results of Experiment 1. The memory consumption constantly grows up to the similar levels.
