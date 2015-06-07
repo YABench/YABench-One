@@ -43,3 +43,17 @@ The results are published online: [C-SPARQL](https://github.com/YABench/yabench-
 </p>
 
 ## Discussion
+
+### C-SPARQL
+
+The results of the experiment conducted with C-SPARQL show that even a slight *shift* of actual window &#x1D54E;<sub>a</sub> may result in low precision and recall values in case of an aggregate query. The notion of shifted window is demonstrated in [Experiment 1](https://github.com/YABench/yabench-one/tree/master/Experiment_1).
+
+Performance results are close to the results of Experiment 1. The memory consumption constantly grows up to the similar levels.
+
+### CQELS
+
+As mentioned in Experiment 1, the oracle checks the correctness of the query results outputted by an engine implementing *content change* reporting policy in a different way. It'd be expected to see precision and recall values whether 0 or 100%, but with CQELS the values are average precision and recall in a given window, therefore they are not only 0 or 100%.
+
+All windows have low precision and recall values, except the first one. This situation is explained by the issue of CQELS when the purging of content of the previous window from the engine's actual window is delayed. Therefore we see 100% p/r for the first window, since there is no previous window whose content would be in the active window, and 0% for the others, since each of them include content of a previous window. This behavior is not considered by the oracle, because of that, precision and recall are so low.
+
+Performance results are very similar to the results of Experiment 1. The memory consumption constantly grows up to the similar levels.
