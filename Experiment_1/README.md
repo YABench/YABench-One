@@ -4,7 +4,7 @@ The experiment evaluates the engines with a **SELECT** query combined with a **F
 
 ## Settings
 
-Three different tests are used to evaluate the engines. The tests are different from each other only by the number of weather stations (see next section), but the other settings are the same:
+Three different tests are used to evaluate the engines. The tests are different from each other only by the number of simulated weather stations (see next section), but the remaining settings are the same:
 
 Settings | Value
 ---------|------
