@@ -28,13 +28,19 @@ The results are published online: [C-SPARQL](https://github.com/YABench/yabench-
 
 ### Precision & Recall
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_s_pr.png" width="30%"/>
-   
+    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_s_pr.png" width="80%"/>
+    </br>
+    Fig. 1. Experiment 1 <i>SMALL</i> scenario precision and recall results for CQELS and C-SPARQL.
+</p>
 
-    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_m_pr.png" width="30%"/>
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_m_pr.png" width="80%"/>
+    </br>
+    Fig. 2. Experiment 1 <i>MEDIUM</i> scenario precision and recall results for CQELS and C-SPARQL.
+</p>
 
-
-    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_b_pr.png" width="30%"/>
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_b_pr.png" width="80%"/>
     </br>
     Fig. 3. Experiment 1 <i>BIG</i> scenario precision and recall results for CQELS and C-SPARQL.
 </p>
