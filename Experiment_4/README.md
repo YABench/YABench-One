@@ -29,13 +29,13 @@ The results are published online: [C-SPARQL](https://github.com/YABench/yabench-
 <p align="center">
     <img src="http://yabench.github.io/yabench-one/Experiment_4/e4_cs_gracious.png"/>
     </br>
-    Fig 1. Experiment 4 *gracious* precision and recall results for C-SPARQL.
+    Fig 1. Experiment 4 <i>gracious</i> precision and recall results for C-SPARQL.
 </p>
 
 <p align="center">
     <img src="http://yabench.github.io/yabench-one/Experiment_4/e4_cs_non-gracious.png"/>
     </br>
-    Fig 2. Experiment 4 *non-gracious* precision and recall results for C-SPARQL.
+    Fig 2. Experiment 4 <i>non-gracious</i> precision and recall results for C-SPARQL.
 </p>
 
 ### CQELS
@@ -43,11 +43,11 @@ The results are published online: [C-SPARQL](https://github.com/YABench/yabench-
 <p align="center">
     <img src="http://yabench.github.io/yabench-one/Experiment_4/e4_cq_gracious.png"/>
     </br>
-    Fig 3. Experiment 4 *gracious* precision and recall results for CQELS.
+    Fig 3. Experiment 4 <i>gracious</i> precision and recall results for CQELS.
 </p>
 
 <p align="center">
     <img src="http://yabench.github.io/yabench-one/Experiment_4/e4_cq_non-gracious.png"/>
     </br>
-    Fig 4. Experiment 4 *non-gracious* precision and recall results for CQELS.
+    Fig 4. Experiment 4 <i>non-gracious</i> precision and recall results for CQELS.
 </p>
