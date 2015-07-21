@@ -28,19 +28,19 @@ The results are published online: [C-SPARQL](https://github.com/YABench/yabench-
 
 ### Precision & Recall
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_s_pr.png"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_s_pr.png" width="80%"/>
     </br>
     Fig. 1. Experiment 1 <i>SMALL</i> scenario precision and recall results for CQELS and C-SPARQL.
 </p>
 
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_m_pr.png"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_m_pr.png" width="80%"/>
     </br>
     Fig. 2. Experiment 1 <i>MEDIUM</i> scenario precision and recall results for CQELS and C-SPARQL.
 </p>
 
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_b_pr.png"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_b_pr.png" width="80%"/>
     </br>
     Fig. 3. Experiment 1 <i>BIG</i> scenario precision and recall results for CQELS and C-SPARQL.
 </p>
@@ -48,19 +48,19 @@ The results are published online: [C-SPARQL](https://github.com/YABench/yabench-
 ### Delay
 
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_s_d.png"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_s_d.png" width="80%"/>
     </br>
     Fig. 4. Experiment 1 <i>SMALL</i> scenario delay for CQELS and C-SPARQL.
 </p>
 
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_m_d.png"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_m_d.png" width="80%"/>
     </br>
     Fig. 5. Experiment 1 <i>MEDIUM</i> scenario delay for CQELS and C-SPARQL.
 </p>
 
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_b_d.png"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_b_d.png" width="80%"/>
     </br>
     Fig. 6. Experiment 1 <i>BIG</i> scenario delay for CQELS and C-SPARQL.
 </p>
@@ -68,19 +68,19 @@ The results are published online: [C-SPARQL](https://github.com/YABench/yabench-
 ### Performance
 
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_s_p.png"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_s_p.png" width="80%"/>
     </br>
     Fig. 7. Experiment 1 <i>SMALL</i> scenario performance results for CQELS and C-SPARQL.
 </p>
 
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_s_p.png"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_s_p.png" width="80%"/>
     </br>
     Fig. 8. Experiment 1 <i>MEDIUM</i> scenario performance results for CQELS and C-SPARQL.
 </p>
 
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_s_p.png"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_s_p.png" width="80%"/>
     </br>
     Fig. 9. Experiment 1 <i>BIG</i> scenario performance results for CQELS and C-SPARQL.
 </p>
