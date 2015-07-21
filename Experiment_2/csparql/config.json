@@ -1,6 +1,7 @@
 {
     "generator": "SG1",
     "seed": "1430237208",
+    "enginename": "C-SPARQL",
     "vars": {
         "TEMP": "50.0",
         "WSIZE": "5s",
@@ -10,18 +11,22 @@
     "interval": "1s",
     "duration": "30s",
     "graceful": "false",
+    "boxplots": "true",
     "tests": [
         {
             "name": "small",
-            "stations": "50"
+            "stations": "5",
+            "runs": "10"
         },
         {
             "name": "medium",
-            "stations": "1000"
+            "stations": "1000",
+            "runs": "10"
         },
         {
             "name": "big",
-            "stations": "10000"
+            "stations": "10000",
+            "runs": "1"
         }
     ]
 }

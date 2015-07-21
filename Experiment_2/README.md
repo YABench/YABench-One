@@ -16,44 +16,46 @@ Duration of the test | 30 sec
 
 Name of test | # of stations (C-SPARQL) ([config.json](https://github.com/YABench/yabench-one/blob/master/Experiment_2/csparql/config.json)) | # of stations (CQELS) ([config.json](https://github.com/YABench/yabench-one/blob/master/Experiment_2/cqels/config.json))
 -------------|--------------------------|----------------------
-SMALL | 50 | 50
-MEDIUM | 1000 | 150
-BIG | 10000 | 300
+SMALL | 1 | 1
+MEDIUM | 1000 | 1000
+BIG | 10000 | 10000
 
-The remaining tests evaluate the scalability of the engines by setting the maximum number of stations. [In case of CQELS the oracle requires a lot more time to check the correctness](TODO) therefore the number of stations is lower.
+Since the MEDIUM scenario yields 0% for precision and recall for both engines (see discussion in the paper) we omit to show results for the BIG scenario here. Additionally, due to drastically increasing delays when running the query of Experiment 2 for CQELS, corresponding delay-plots are omitted. Consequently, the next section shows precision and recall plots for SMALL load, and performances plots for SMALL/MEDIUM/BIG load.
 
 ## Results
 
 The results are published online: [C-SPARQL](https://github.com/YABench/yabench-one/tree/master/Experiment_2/csparql/results) and [CQELS](https://github.com/YABench/yabench-one/tree/master/Experiment_2/cqels/results). Take a look at [Visualisation of the results](https://github.com/YABench/yabench/wiki#visualisation-the-results) wiki page to find out how to visualise the results.
 
-### C-SPARQL
-
+### Precision & Recall
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_2/csparql/ORACLE_pr.png"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_2/e2_s_pr.png"/>
     </br>
-    Fig 1. The results of the experiment for C-SPARQL. Precision and recall per window.
+    Fig. 1. Experiment 2 *SMALL* scenario precision and recall results for CQELS and C-SPARQL.
 </p>
 
-### CQELS
-
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_2/cqels/ORACLE_pr.png"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_2/e2_m_pr.png"/>
     </br>
-    Fig 2. The results of the experiment for CQELS. Precision and recall per window.
+    Fig. 2. Experiment 2 *MEDIUM* scenario precision and recall results for CQELS and C-SPARQL.
 </p>
 
-## Discussion
 
-### C-SPARQL
+### Performance
 
-The results of the experiment conducted with C-SPARQL show that even a slight *shift* of actual windows &#x1D54E;<sub>a</sub> results in low precision and recall values in case of an aggregate query. The notion of shifted windows is demonstrated in [Experiment 1](https://github.com/YABench/yabench-one/tree/master/Experiment_1). The reason is that an aggregate query typically only returns one value. Hence, if this returned value does not match precisely the expected value, precsion and recall will be zero. Since one missing triple (for instance due to slight delay) already influences the resulting aggregate value, this happens quickly. We did some manual testing with *gracious mode* (explained in section **3.4 Oracle** in the paper) which makes the oracle aware of window border shifts resulting in higher precision and recall values.
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_2/e2_s_p.png"/>
+    </br>
+    Fig. 3. Experiment 2 *SMALL* scenario performance results for CQELS and C-SPARQL.
+</p>
 
-Performance results are close to the results of Experiment 1. Memory consumption constantly grows up to similar levels.
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_2/e2_s_p.png"/>
+    </br>
+    Fig. 4. Experiment 2 *MEDIUM* scenario performance results for CQELS and C-SPARQL.
+</p>
 
-### CQELS
-
-As mentioned in Experiment 1, the oracle checks the correctness of the query results outputted by an engine implementing *content change* reporting policy in a different way. It'd be expected to see precision and recall values at either 0% or 100%, but with CQELS the values are averaged over a given window resulting in more granular values.
-
-All windows have low precision and recall values, except the first one. This situation is explained by an issue of CQELS, that is, it forgets to purge content of the previous window from its actual window. Therefore we see precision and recall of 100% for the first window, since there is no previous window whose content would be left in the active window. For the remaining windows we observe 0%, since each of them erroneously includes content of a previous window. This behavior is not considered by the oracle, because of that, precision and recall are so low.
-
-Performance results are very similar to the results of Experiment 1. The memory consumption constantly grows up to the similar levels.
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_2/e2_s_p.png"/>
+    </br>
+    Fig. 5. Experiment 2 *BIG* scenario performance results for CQELS and C-SPARQL.
+</p>

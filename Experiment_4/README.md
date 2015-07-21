@@ -27,24 +27,27 @@ The results are published online: [C-SPARQL](https://github.com/YABench/yabench-
 ### C-SPARQL
 
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_4/csparql/ORACLE_pr.png"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_4/e4_cs_gracious.png"/>
     </br>
-    Fig 1. The results of the experiment for C-SPARQL. Precision and recall per window.
+    Fig 1. Experiment 4 *gracious* precision and recall results for C-SPARQL.
+</p>
+
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_4/e4_cs_non-gracious.png"/>
+    </br>
+    Fig 2. Experiment 4 *non-gracious* precision and recall results for C-SPARQL.
 </p>
 
 ### CQELS
 
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_4/cqels/ORACLE_pr.png"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_4/e4_cq_gracious.png"/>
     </br>
-    Fig 1. The results of the experiment for CQELS. Precision and recall per window.
+    Fig 3. Experiment 4 *gracious* precision and recall results for CQELS.
 </p>
 
-## Discussion
-
-In addition to the algorithm implemented by the oracle and demonstrated in other experiments, the oracle implements a new method, called *gracious*, which takes into account known issues of supported report policies by the engines and tries to eliminate them. This possibility facilitates detection of new issues unrelated to potential window delays.
-
-* *Content change:* lower precision/recall may be observed, because of delayed purging of content of the previous window from the engine's active window;
-* *Window close:* lower precision/recall may be observed, because of the shift of the engine's active window scope forward on the timeline which can be caused, for instance, by high load.
-
-We run two similar tests for both engines, but one of them in *gracious* mode and the other one in *non-gracious* mode. As it may be seen, in *gracious* mode precision/recall is high, but in normal (*non-gracious*) mode it goes down. Since gracious mode successfully eliminates low precision/recall values, we can prove that the implementations of *window close* and *content change* policies by the engines suffer from the issues explained above and in previous experiments. 
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_4/e4_cq_non-gracious.png"/>
+    </br>
+    Fig 4. Experiment 4 *non-gracious* precision and recall results for CQELS.
+</p>

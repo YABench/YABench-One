@@ -17,41 +17,68 @@ Duration of the test | 30 sec
 Name of test | # of stations (C-SPARQL) ([config.json](https://github.com/YABench/yabench-one/blob/master/Experiment_3/csparql/config.json)) | # of stations (CQELS) ([config.json](https://github.com/YABench/yabench-one/blob/master/Experiment_3/cqels/config.json))
 -------------|--------------------------|----------------------
 SMALL | 50 | 50
-MEDIUM | 1000 | 150
-BIG | 2500 | 300
-
-The remaining tests evaluate the scalability of the engines by setting the maximum number of stations. [In case of CQELS the oracle requires a lot more time to check the correctness](TODO) therefore the number of stations is lower.
+MEDIUM | 200 | 200
+BIG | 500 | 500
 
 ## Results
 
 The results are published online: [C-SPARQL](https://github.com/YABench/yabench-one/tree/master/Experiment_3/csparql/results) and [CQELS](https://github.com/YABench/yabench-one/tree/master/Experiment_3/cqels/results). Take a look at [Visualisation of the results](https://github.com/YABench/yabench/wiki#visualisation-the-results) wiki page to find how out to visualise the results.
 
-### C-SPARQL
-
+### Precision & Recall
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_3/csparql/ORACLE_pr.png"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_3/e3_s_pr.png"/>
     </br>
-    Fig 1. The results of the experiment for C-SPARQL. Precision and recall per window.
+    Fig. 1. Experiment 3 *SMALL* scenario precision and recall results for CQELS and C-SPARQL.
 </p>
 
-### CQELS
-
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_3/cqels/ORACLE_pr.png"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_3/e3_m_pr.png"/>
     </br>
-    Fig 2. The results of the experiment for CQELS. Precision and recall per window.
+    Fig. 2. Experiment 3 *MEDIUM* scenario precision and recall results for CQELS and C-SPARQL.
 </p>
 
-## Discussion
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_3/e3_b_pr.png"/>
+    </br>
+    Fig. 3. Experiment 3 *BIG* scenario precision and recall results for CQELS and C-SPARQL.
+</p>
 
-### C-SPARQL
+### Delay
 
-As is shown in the charts, precision and recall values decrease under high load. Under low load precision and recall values are above 75%, but in the other charts the last windows show 0% precision and recall. This situation is explained in the same way as it was explained in Experiment 1: the reason is the delay of the actual window.
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_3/e3_s_d.png"/>
+    </br>
+    Fig. 4. Experiment 3 *SMALL* scenario delay for CQELS and C-SPARQL.
+</p>
 
-Performance results are close to the results of Experiment 1. The memory consumption constantly grows up to the similar levels.
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_3/e3_m_d.png"/>
+    </br>
+    Fig. 5. Experiment 3 *MEDIUM* scenario delay for CQELS and C-SPARQL.
+</p>
 
-### CQELS
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_3/e3_b_d.png"/>
+    </br>
+    Fig. 6. Experiment 3 *BIG* scenario delay for CQELS and C-SPARQL.
+</p>
 
-In this experiment we observe how the issue with purging the content of the previous window affects precision and recall values. Precision and recall values of all windows, except the first one, are close to 50%, because roughly half of the results stem from the content of the previous window while the seconde half comes from the content of the current window.
+### Performance
 
-Performance results are close to the results of Experiment 1. The memory consumption constantly grows up to the similar levels.
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_3/e3_s_p.png"/>
+    </br>
+    Fig. 7. Experiment 3 *SMALL* scenario performance results for CQELS and C-SPARQL.
+</p>
+
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_3/e3_s_p.png"/>
+    </br>
+    Fig. 8. Experiment 3 *MEDIUM* scenario performance results for CQELS and C-SPARQL.
+</p>
+
+<p align="center">
+    <img src="http://yabench.github.io/yabench-one/Experiment_3/e3_s_p.png"/>
+    </br>
+    Fig. 9. Experiment 3 *BIG* scenario performance results for CQELS and C-SPARQL.
+</p>

@@ -1,27 +1,32 @@
 {
-    "generator": "SG1",
-    "seed": "1430236906",
-    "vars": {
-        "TEMP": "50.0",
-        "WSIZE": "5s",
-        "WSLIDE": "5s",
-        "WPOLICY": "onwindowclose"
+  "generator": "SG1",
+  "enginename": "C-SPARQL",
+  "seed": "1430236906",
+  "boxplots": "true",
+  "vars": {
+    "TEMP": "50.0",
+    "WSIZE": "5s",
+    "WSLIDE": "5s",
+    "WPOLICY": "onwindowclose"
+  },
+  "graceful": "false",
+  "interval": "1s",
+  "duration": "30s",
+  "tests": [
+    {
+        "name": "small",
+        "stations": "50",
+        "runs": "10"
     },
-    "graceful": "false",
-    "interval": "1s",
-    "duration": "30s",
-    "tests": [
-        {
-            "name": "small",
-            "stations": "50"
-        },
-        {
-            "name": "medium",
-            "stations": "1000"
-        },
-        {
-            "name": "big",
-            "stations": "10000"
-        }
-    ]
+    {
+        "name": "medium",
+        "stations": "1000",
+        "runs": "10"
+    },
+    {
+        "name": "big",
+        "stations": "10000",
+        "runs": "10"
+    }
+  ]
 }

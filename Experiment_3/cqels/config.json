@@ -1,6 +1,7 @@
 {
     "generator": "SG1",
     "seed": "1430236808",
+    "enginename": "CQELS",
     "vars": {
         "TEMP": "50.0",
         "WSIZE": "5s",
@@ -12,18 +13,22 @@
     "duration": "30s",
     "graceful": "false",
     "singleresult": "false",
+    "boxplots": "true",
     "tests": [
         {
             "name": "small",
+            "runs": "10",
             "stations": "50"
         },
         {
             "name": "medium",
-            "stations": "150"
+            "runs": "10",
+            "stations": "200"
         },
         {
             "name": "big",
-            "stations": "300"
-        }
+            "runs": "10",
+            "stations": "500"
+        },
     ]
 }
