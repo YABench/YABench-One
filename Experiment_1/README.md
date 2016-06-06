@@ -74,13 +74,13 @@ The results are published online: [C-SPARQL](https://github.com/YABench/yabench-
 </p>
 
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_s_p.png" width="80%"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_m_p.png" width="80%"/>
     </br>
     Fig. 8. Experiment 1 <i>MEDIUM</i> scenario performance results for CQELS and C-SPARQL.
 </p>
 
 <p align="center">
-    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_s_p.png" width="80%"/>
+    <img src="http://yabench.github.io/yabench-one/Experiment_1/e1_b_p.png" width="80%"/>
     </br>
     Fig. 9. Experiment 1 <i>BIG</i> scenario performance results for CQELS and C-SPARQL.
 </p>
